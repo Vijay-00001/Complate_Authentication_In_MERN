@@ -1,0 +1,112 @@
+
+
+.image-swapping .slide-bar{
+    height: 431px;
+  }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+ /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-pagination-bullet{
+    background-color: white;
+    opacity:1;
+    transition: all 0.3s;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: black;
+    box-shadow: 0 0 1px black;
+    opacity:1;
+    z-index: 1;
+  }
+
+  .ad::before{
+    content:"";
+    position: absolute;
+    width: 391px;
+    height: 191px;
+    left: 0%;
+    background-color: white;
+    filter: blur(50px);
+    opacity: 0.9;
+    z-index: 0.1;
+  }
+
+  .swiper-slide .ad-font {
+    left: 9%;
+    bottom: 11%;
+    text-align: left;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .ad-font h4{
+      display: inline-block;
+      color: white;
+      padding: 0.1rem 1rem;
+      border-radius: 7px;
+      background-color: black;
+  }
+
+  .ad-font :where(h2,h3) span:first-child{
+      font-size:3.2rem;
+      font-weight:300;
+      margin-left: -71px;
+      line-height: 4.5rem;
+      color: var(--main-color);
+  }
+
+  .ad-font :where(h2,h3) span:last-child{
+      font-size:3.2rem;
+      font-weight:700;
+      text-transform: uppercase;
+      line-height: 4.5rem;
+      letter-spacing: -1.5px;
+  }
+
+  .ad-font a{
+      padding:1rem 2.8rem;
+      background:var(--main-color);
+      border-radius:4rem;
+      font-size:1.6rem;
+      box-shadow:0 0 1rem var(--main-color);
+      color:var(--secound-bg-color);
+      letter-spacing:0.1rem;
+      font-weight:600;
+      transition:all 0.5s ease;
+      padding: 1rem 3rem;
+      font-size: 1.3rem;
+      border-radius: 17px;
+      line-height: 5rem;
+  }
+
+  .ad-font a:hover{
+    box-shadow:none;
+  }
+
+
+  @media (max-width:551px) {
+    .image-swapping .slide-bar{
+      height: 277px;
+    }
+  }

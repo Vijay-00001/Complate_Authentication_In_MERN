@@ -1,0 +1,74 @@
+body{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table{
+    color: white;
+    width: 100%;
+    max-height: 100%;
+    margin: 55px 311px 11px;
+    justify-content: center;
+    align-items: center;
+}
+
+.table table{
+    width: 60%;
+    border: none;
+    min-height: 100%;
+    margin-bottom: 5rem;
+    border-collapse: collapse;
+}
+
+.table .heading td{
+    color: white;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: green;
+    border-bottom: 3px solid yellow;
+}
+
+.table tr:nth-of-type(even){
+    color: white;
+    background-color: rgb(206, 252, 137);
+}
+
+.table tr:last-of-type{
+    border-bottom: 3px solid green;
+}
+
+.table td:first-of-type{
+    width: 30%;
+    padding: 0.9rem 1rem;
+    font-size: 2rem;
+    color: black;
+    font-weight: 700;
+    left: 0;
+    font-family: 'Popins';
+}
+
+.table :where(input,select){
+    width: 91%;
+    border: none;
+    color: gray;
+    padding: 0.7rem;
+    font-size: 1.7rem;
+    background: transparent;
+}
+
+.table :where(input,select):hover,
+.table :where(input,select):active{
+    color: black;
+    background-color: transparent;
+}
+
+.table button{
+    display: block;
+    width: 15rem;
+    height: 3rem;
+    margin: 0 auto 5rem;
+} 
